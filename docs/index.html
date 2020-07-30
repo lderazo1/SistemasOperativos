@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="ES">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Sistemas Operativos</title>
+        <link rel = "icon" href = "https://www.utpl.edu.ec/sites/default/files/imagenes/escudo.png" type = "image/x-icon"> 
+        <meta name="algoritmo" content="Optimal Page Replacer">
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="assets/demo.css">
+		<link rel="stylesheet" href="assets/header-second-bar.css">
+		<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<header class="header-two-bars">
+
+	<div class="header-first-bar">
+
+		<div class="header-limiter">
+
+			<h1>Sistemas<span> Operativos</span></h1>
+
+			<a href="#header-two-bars" class="logout-button">Salir</a>
+		</div>
+
+	</div>
+
+	<div class="header-second-bar">
+
+		<div class="header-limiter">
+			<h2><a>Algoritmo de reemplazo de páginas óptimo</a></h2>
+
+			<nav>
+				<a href="#"><i class="fa fa-comments-o"></i> Manual de Usuario</a>
+				<a href="#"><i class="fa fa-file-text"></i> Presentación</a>
+				<a href="#"><i class="fa fa-group"></i> Funcionamiento</a>
+			</nav>
+
+		</div>
+
+	</div>
+
+</header>
+        <div class="input-wrap">
+        	<h1 style="color:purple;">Ingreso de Datos</h1>
+            <div class="input-section">
+                    <h2>Cadena de Referencia</h2>
+                    <textarea id="page-data-input" rows="2" cols="80">7,0,1,2,0,3,0,4,2,3,0,3,0,3,2,1,0,1,7,0,1</textarea>
+                    <h2>Marcos de página</h2>
+                    <input id="buffer-size-input" value="3" type="number">
+            </div>
+        </div>
+        <hr>
+        <div id="controls">
+            <button id="run-optimal">Empezar</button>
+        </div>
+		<hr>
+        
+        <div id="page-replace-visualizer">
+            <div id="results-wrap">
+                <h3>RESULTADOS</h3>
+                <div class="dataContainer"></div>
+            </div>
+        </div>
+
+        <script src="js/jquery.canvasjs.min.js"></script>
+        <script src="js/interface.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
